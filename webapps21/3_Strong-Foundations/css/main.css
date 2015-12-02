@@ -1,0 +1,28 @@
+/*
+Add custom CSS in here
+*/
+
+#title {
+  color: white;
+}
+
+h2 {
+  font-family: "geometria_lightlight";
+  font-weight: bolder;
+}
+
+p {
+  color: gray;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.columns {
+  padding-top: 10px;
+}
+
+#title {
+  padding-left: 10px
+}

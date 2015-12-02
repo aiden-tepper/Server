@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mirman Apps, Inc.</title>
+  <!--  FOUNDATION-->
+  <link type="text/css" rel="stylesheet" href="foundation/css/normalize.css" />
+  <link type="text/css" rel="stylesheet" href="foundation/css/foundation.css" />
+  <script src="foundation/js/vendor/jquery.js"></script>
+  <script src="foundation/js/foundation.min.js"></script>
+  <!--  FONTAWESOME-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!--  SLICK-->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+  <!--  OUR APP-->
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="css/slick-fix.css" />
+</head>
+
+<body>
+  <div class="sticky">
+    <nav id="top-nav" class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Mirman Apps</h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+            <li>
+              <a href="html/about.html">About</a>
+            </li>
+            <li>
+              <a href="html/projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="html/contact.html">Contact</a>
+            </li>
+          </ul>
+        </section>"
+      </nav>
+    </div>
+    <div class="row">
+      <div class="slider">
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Univac_1232_-_Udvar-Hazy_Center_-_1.JPG/1280px-Univac_1232_-_Udvar-Hazy_Center_-_1.JPG"/>
+        </div>
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/AlbanyStateUniversity_ComputerOperationsRoom_1981_Univac1100-80_skaliert.jpg/1280px-AlbanyStateUniversity_ComputerOperationsRoom_1981_Univac1100-80_skaliert.jpg" />
+        </div>
+        <div>
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/ISS_Flight_Control_Room_2006.jpg/1920px-ISS_Flight_Control_Room_2006.jpg"/>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="about" class="small-12 medium-4 columns fp">
+          <div class="fp-header text-center">
+            <h2><i class="fa fa-lightbulb-o"></i> Gifted Apps from Gifted Students</h2>
+          </div>
+          <p>
+            Mirman Apps developers are as bright as they get. Smart code from smart coders.
+          </p>
+        </div>
+        <div id="methods" class="small-12 medium-4 columns fp">
+          <div class="fp-header text-center">
+            <h2><i class="fa fa-code"></i> JavaScript Powerhouse</h2>
+          </div>
+          <p>
+            We build high-performing apps using the latest web technologies,
+            specializing in AngularJS.
+          </p>
+        </div>
+        <div id="community" class="small-12 medium-4 columns fp">
+          <div class="fp-header text-center">
+            <h2><i class="fa fa-thumbs-o-up"></i> Coding for good</h2>
+          </div>
+          <p>
+            Our apps serve a purpose. Ain't no Flappy Bird here; we write applications that solve problems and improve people's lives.
+          </p>
+        </div>
+      </div>
+      <div id="contact-us" class="text-center small-12 columns">
+        <h2>Join us</h2>
+        <p>
+          Do you have an idea that needs code to come to fruition?
+        </p>
+        <a href="contact.html"><button type="button">Get Started</button></a>
+      </div>
+    </div>
+  </body>
+  <script>
+  $(document).ready(function() {
+    $(".slider").slick({
+      adaptiveHeight: true,
+      autoplay: true,
+      fade: true,
+      arrows: true,
+    });
+  });
+  </script>
+  </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="bootstrap-3.3.5-dist/js/bootstrap.js"></script>
+  <script src="js/app.js"></script>
+  <link type="text/css" rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <link type="text/css" rel="stylesheet" href="css/geometria_light_macroman/stylesheet.css"/>
+</head>
+
+<body>
+
+  <div>
+    <h1>Press button to alert therapist of your arrival</h1>
+  </div>
+
+  <div class="tenant" id="tenant1">
+    <h2>Melanie -</h2>
+    <div class="buttoncircle"></div>
+    <div class="button" id="button1" onmousedown="buttonclick.play()" onclick="post(tenant1)"></div>
+  </div>
+
+  <div class="tenant" id="tenant2">
+    <h2>Nina -</h2>
+    <div class="buttoncircle"></div>
+    <div class="button" id="button2" onmousedown="buttonclick.play()" onclick="post(tenant2)"></div>
+    <h4>(not currently working)</h4>
+  </div>
+
+  <div class="tenant" id="tenant3">
+    <h2>Lauren -</h2>
+    <div class="buttoncircle"></div>
+    <div class="button" id="button3" onmousedown="buttonclick.play()" onclick="post(tenant3)"></div>
+  </div>
+
+  <div class="tenant" id="tenant4">
+    <h2>Julie -</h2>
+    <div class="buttoncircle"></div>
+    <div class="button" id="button4" onmousedown="buttonclick.play()" onclick="post(tenant4)"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="modal fade" id="modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title" id="modaltitle">Button Clicked</h2>
+          </div>
+          <div class="modal-body">
+            <h3 id="modalbody">Some text in the modal.</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

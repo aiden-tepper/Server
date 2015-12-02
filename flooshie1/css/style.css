@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Quadranta';
+    src: url('../fonts/Quadranta-Regular.otf');
+}
+
+@font-face{
+    font-family: 'Quadranta-Bold';
+    src: url('../fonts/Quadranta-Bold.otf');
+}
+
+.btn {
+    font-family: 'Poiret One';
+    text-align: center;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.toilet-butt{
+    font-size: 2.5em;
+}
+
+.headers{
+    text-align: center;
+    color: white;
+}
+
+.showMenu{
+    left: 0%;
+}
+
+body{
+    background-color: #6ABBCD;
+    font-size: 20px;
+}
+
+a{
+    display: block;
+}
+
+p{
+    font-family: 'Quadranta';
+}
+
+#title{
+    font-family: 'Quadranta';
+    font-size: 3.5em;
+}
+
+#sub-title{
+    font-family: 'Quadranta';
+}
+
+#settingsButton{
+    font-family: 'Quadranta';
+    border-radius: 10px;
+    position: fixed;
+    top: 3px;
+    left: 0px;
+    background-color: transparent;
+}
+
+#settingsPanel {
+    display: none;
+}

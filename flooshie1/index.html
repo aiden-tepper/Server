@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--Angular-->
+    <script src="/js/angular.min.js"></script>
+    <!--Links-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/iflush.js"></script>
+</head>
+    
+    
+<body ng-app="flooshie">
+    <div ng-controller="toiletCtrl" class="container-fluid">
+        <div>
+            <h1 id="title" class="headers">Flooshie</h1>
+            <h2 id="sub-title" class="headers">Your Business is Our Business</h2>
+        </div>
+        
+        <div class="text-center" id="pee">
+           <button class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn btn-lg btn-primary toilet-butt" ng-click="pee()">
+               <img src="img/pee-icon.png" height="50"/>
+               <p>pee</p>
+            </button>
+            <p>Pee Count: {{peeCount}}</p>
+        </div>
+
+        <div class="text-center" id="poo">
+           <button class="col-lg-12 col-md-12 col-sm-12 col-xs-12 btn btn-lg btn-primary toilet-butt" ng-click="poo()">
+               <img src="img/poo-icon.png" height="50"/>
+               <p>poo</p>
+            </button>
+            <p>Poo Count: {{pooCount}}</p>
+        </div>
+        <div>
+            <button class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id ="settingsButton" ng-click = "toggleSettings()">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
+            <div id ="settingsPanel">
+                <h4 id="settings-gender">Gender</h4>
+                <h5 id="settings-male">Male</h5>
+                <h5 id="settings-female">Female</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <homepage></homepage>
+    </div>
+</body>
+  
+    
+    
+</html>
