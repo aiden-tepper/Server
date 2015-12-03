@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+  a:link    {color:green; background-color:transparent; text-decoration:none};
+  a:visited {color:green; background-color:transparent; text-decoration:none};
+  a:hover   {color:red; background-color:transparent; text-decoration:none};
+  a:active  {color:red; background-color:transparent; text-decoration:underline};
