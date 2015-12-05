@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Protected Page</title>
+  <script src="jquery-2.1.4.min.js"></script>
+  <script language="javascript" type="text/javascript">
+  $(document).ready(function(){
+    $("#button").click(function(){
+      var password = $("#password").val();
+      if(password == "open sesame") {
+        window.location = "www.aident.xyz/landing.html";
+      } else {
+        alert("Incorrect password");
+        $("#password").val("");
+      }
+    });
+  })
+  </script>
 </head>
 <body>
-  <br><br><br><br><br>
-  <h1>Welcome to the landing page of 108.185.100.230</h1>
-  <h1>Click on the links below to navigate between pages</h1><br>
-  <a href="http://108.185.100.230/calllight"><h2>Call Light</h2></a>
-  <a href="http://108.185.100.230/flooshie"><h2>Flooshie</h2></a>
-  <a href="http://108.185.100.230/webapps2"><h2>Web Apps</h2></a>
-  <a href="http://108.185.100.230/sina.html"><h2>Sina</h2></a>
+  <h1>Password:</h1>
+  <input type="password" id="password" />
+  <button id="button">Go</button>
 </body>
 </html>
